@@ -1,0 +1,18 @@
+PHP Laravel 5x - Website bán hàng Bài 11: Đọc Chi Tiết Sản Phẩm
+    https://www.youtube.com/watch?v=o-L-PMgPQOQ&t=123s  
+PHP Laravel 5x - Website bán hàng Bài 12: Giỏ hàng    
+    https://www.youtube.com/watch?v=ise_SPslDH4
+PHP Laravel 5x - Website bán hàng Bài 13: Xóa Giỏ Hàng
+    https://www.youtube.com/watch?v=5c4BhBRjx44
+PHP Laravel 5x - Website bán hàng Bài 14: Lưu Thông Tin Đơn Hàng Vào Database Phần 1
+    https://www.youtube.com/watch?v=XbggT3OFQk4
+PHP Laravel 5x - Website bán hàng Bài 15: Lưu Thông Tin Đơn Hàng Vào Database Phần 2
+    https://www.youtube.com/watch?v=lZpc4mEnMBo
+PHP Laravel 5x - Website bán hàng Bài 16: Cắt Layout Trang Đăng Kí, Đăng Nhập
+    https://www.youtube.com/watch?v=Y85E0m_VKYk
+PHP Laravel 5x - Website bán hàng Bài 17: Chức Năng Đăng Kí Tài Khoản Người Dùng
+    https://www.youtube.com/watch?v=tgdBF7PvRhs
+PHP Laravel 5x - Website bán hàng Bài 18: Đăng Nhập Và Đăng Xuất Với Authentication
+    https://www.youtube.com/watch?v=uLTE7dPUQI4
+PHP Laravel 5x - Website bán hàng Bài 19: Chức Năng Tìm Kiếm
+    https://www.youtube.com/watch?v=a_Vu9CJ2wFI
