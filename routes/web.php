@@ -17,9 +17,9 @@
 
 Route::get('/', [ 'as' => 'trang-chu', 'uses' => 'PageController@getIndex' ]);
 
-Route::get('loai-san-pham',[ 'as' => 'loaisanpham', 'uses' => 'PageController@getLoaiSanPham' ]);
+Route::get('loai-san-pham/{type}',[ 'as' => 'loaisanpham', 'uses' => 'PageController@getLoaiSanPham' ]);
 
-Route::get('chi-tiet-san-pham',[ 'as' => 'chitietsanpham', 'uses' => 'PageController@getChiTietSanPham' ]);
+Route::get('chi-tiet-san-pham/{id}',[ 'as' => 'chitietsanpham', 'uses' => 'PageController@getChiTietSanPham' ]);
 
 Route::get('gioi-thieu', [ 'as' => 'gioithieu', 'uses' => 'PageController@getGioiThieu' ]);
 
