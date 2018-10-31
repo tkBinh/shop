@@ -70,75 +70,41 @@
                     </div>
                     <div class="space50">&nbsp;</div>
                     <div class="beta-products-list">
-                        <h4>Related Products</h4>
+                        <h4>Sản phẩm cùng loại</h4>
 
                         <div class="row">
-                            <div class="col-sm-4">
-                                <div class="single-item">
-                                    <div class="single-item-header">
-                                        <a href="product.html"><img src="source/assets/dest/images/products/4.jpg"
-                                                                    alt=""></a>
-                                    </div>
-                                    <div class="single-item-body">
-                                        <p class="single-item-title">Sample Woman Top</p>
-                                        <p class="single-item-price">
-                                            <span>$34.55</span>
-                                        </p>
-                                    </div>
-                                    <div class="single-item-caption">
-                                        <a class="add-to-cart pull-left" href="product.html"><i
-                                                class="fa fa-shopping-cart"></i></a>
-                                        <a class="beta-btn primary" href="product.html">Details <i
-                                                class="fa fa-chevron-right"></i></a>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="single-item">
-                                    <div class="single-item-header">
-                                        <a href="product.html"><img src="source/assets/dest/images/products/5.jpg"
-                                                                    alt=""></a>
-                                    </div>
-                                    <div class="single-item-body">
-                                        <p class="single-item-title">Sample Woman Top</p>
-                                        <p class="single-item-price">
-                                            <span>$34.55</span>
-                                        </p>
-                                    </div>
-                                    <div class="single-item-caption">
-                                        <a class="add-to-cart pull-left" href="product.html"><i
-                                                class="fa fa-shopping-cart"></i></a>
-                                        <a class="beta-btn primary" href="product.html">Details <i
-                                                class="fa fa-chevron-right"></i></a>
-                                        <div class="clearfix"></div>
+                            @foreach($sameTypeProduct as $itemSameTypeProduct)
+                                <div class="col-sm-4">
+                                    <div class="single-item">
+                                        <div class="single-item-header">
+                                            <a href="{{route('chitietsanpham', $itemSameTypeProduct->id)}}"><img
+                                                    src="source/image/product/{{$itemSameTypeProduct->image}}"
+                                                    alt="" height="320px" width="270px"></a>
+                                        </div>
+                                        <div class="single-item-body">
+                                            <p class="single-item-title">{{$itemSameTypeProduct->name}}</p>
+                                            <p class="single-item-price">
+                                                @if($itemSameTypeProduct->promotion_price != 0)
+                                                    <span class="flash-del">{{number_format($itemSameTypeProduct->unit_price)}}</span>
+                                                    <span class="flash-sale">{{number_format($itemSameTypeProduct->promotion_price)}}</span>
+                                                @elseif($itemSameTypeProduct->promotion_price == 0)
+                                                    <span>{{number_format($itemSameTypeProduct->unit_price)}}</span>
+                                                @endif
+                                            </p>
+                                        </div>
+                                        <div class="single-item-caption">
+                                            <a class="add-to-cart pull-left" href="product.html"><i
+                                                    class="fa fa-shopping-cart"></i></a>
+                                            <a class="beta-btn primary" href="product.html">Details <i
+                                                    class="fa fa-chevron-right"></i></a>
+                                            <div class="clearfix"></div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="single-item">
-                                    <div class="ribbon-wrapper">
-                                        <div class="ribbon sale">Sale</div>
-                                    </div>
-
-                                    <div class="single-item-header">
-                                        <a href="#"><img src="source/assets/dest/images/products/6.jpg" alt=""></a>
-                                    </div>
-                                    <div class="single-item-body">
-                                        <p class="single-item-title">Sample Woman Top</p>
-                                        <p class="single-item-price">
-                                            <span class="flash-del">$34.55</span>
-                                            <span class="flash-sale">$33.55</span>
-                                        </p>
-                                    </div>
-                                    <div class="single-item-caption">
-                                        <a class="add-to-cart pull-left" href="#"><i
-                                                class="fa fa-shopping-cart"></i></a>
-                                        <a class="beta-btn primary" href="#">Details <i class="fa fa-chevron-right"></i></a>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </div>
-                            </div>
+                            @endforeach
+                        </div>
+                        <div class="row">
+                            {{$sameTypeProduct->links()}}
                         </div>
                     </div> <!-- .beta-products-list -->
                 </div>

@@ -43,7 +43,7 @@
                                                 </div>
                                             @endif
                                             <div class="single-item-header">
-                                                <a href="{{route('chitietsanpham', $itemProductNew->id)}}"><img
+                                                <a href="{{route('chitietsanpham', $itemProductByType->id)}}"><img
                                                             src="source/image/product/{{$itemProductByType->image}}"
                                                             alt="" height="320px" width="270px"></a>
                                             </div>
@@ -61,7 +61,7 @@
                                             <div class="single-item-caption">
                                                 <a class="add-to-cart pull-left" href="shopping_cart.html"><i
                                                             class="fa fa-shopping-cart"></i></a>
-                                                <a class="beta-btn primary" href="{{route('chitietsanpham', $itemProductNew->id)}}">Details <i
+                                                <a class="beta-btn primary" href="{{route('chitietsanpham', $itemProductByType->id)}}">Details <i
                                                             class="fa fa-chevron-right"></i></a>
                                                 <div class="clearfix"></div>
                                             </div>
@@ -89,7 +89,7 @@
                                                 </div>
                                             @endif
                                             <div class="single-item-header">
-                                                <a href="{{route('chitietsanpham', $itemProductNew->id)}}"><img
+                                                <a href="{{route('chitietsanpham', $itemProductNotByType->id)}}"><img
                                                             src="source/image/product/{{$itemProductNotByType->image}}"
                                                             alt="" height="320px" width="270px"></a>
                                             </div>
@@ -107,7 +107,7 @@
                                             <div class="single-item-caption">
                                                 <a class="add-to-cart pull-left" href="shopping_cart.html"><i
                                                             class="fa fa-shopping-cart"></i></a>
-                                                <a class="beta-btn primary" href="{{route('chitietsanpham', $itemProductNew->id)}}">Details <i
+                                                <a class="beta-btn primary" href="{{route('chitietsanpham', $itemProductNotByType->id)}}">Details <i
                                                             class="fa fa-chevron-right"></i></a>
                                                 <div class="clearfix"></div>
                                             </div>
