@@ -3,7 +3,7 @@ PHP Laravel 5x - Website bán hàng Bài 11: Đọc Chi Tiết Sản Phẩm
 PHP Laravel 5x - Website bán hàng Bài 12: Giỏ hàng
     https://www.youtube.com/watch?v=ise_SPslDH4
 PHP Laravel 5x - Website bán hàng Bài 13: Xóa Giỏ Hàng
-    https://www.youtube.com/watch?v=5c4BhBRjx44
+        https://www.youtube.com/watch?v=5c4BhBRjx44
 PHP Laravel 5x - Website bán hàng Bài 14: Lưu Thông Tin Đơn Hàng Vào Database Phần 1
     https://www.youtube.com/watch?v=XbggT3OFQk4
 PHP Laravel 5x - Website bán hàng Bài 15: Lưu Thông Tin Đơn Hàng Vào Database Phần 2
