@@ -51,6 +51,11 @@
                                 {{--Kiểm tra có Session cart không --}}
                                 @foreach($product_cart as $itemProductCart)
                                     <div class="cart-item">
+                                        <a class="cart-item-edit" href="#"><i class="fa fa-pencil"></i></a>
+                                        <a class="cart-item-delete" href="{{route('xoagiohang',
+                                        $itemProductCart['item']['id'])
+                                        }}"><i class="fa
+                                        fa-times"></i></a>
                                         <div class="media">
                                             <a class="pull-left" href="#"><img
                                                     src="source/image/product/{{$itemProductCart['item']['image']}}"

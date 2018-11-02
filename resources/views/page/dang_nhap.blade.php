@@ -21,6 +21,14 @@
                 <input type="hidden" name="_token" value="{{csrf_token()}}">
                 <div class="row">
                     <div class="col-sm-3"></div>
+                    @if(count($errors) > 0)
+                        <div class="alert alert-danger">
+                            @foreach($errors->all() as $errorSignUp)
+                                {{$errorSignUp}}
+                                <br />
+                            @endforeach
+                        </div>
+                    @endif
                     @if(Session::has('flag'))
                         <div class="alert alert-{{Session::get('flag')}}">{{Session::get('message')}}</div>
                     @endif

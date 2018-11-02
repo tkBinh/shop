@@ -26,4 +26,8 @@ Route::get('search', ['as' => 'search', 'uses' => 'PageController@getSearch']);
 
 Route::get('del-cart/{id}', ['as' => 'xoagiohang', 'uses' => 'PageController@getDelCart']);
 
+Route::get('dat-hang', ['as' => 'dathang', 'uses' => 'PageController@getCheckOut']);
+
+Route::post('dat-hang', ['as' => 'dathang', 'uses' => 'PageController@postCheckOut']);
+
 

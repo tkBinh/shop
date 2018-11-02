@@ -148,6 +148,23 @@ class PageController extends Controller
     public function getDelCart($id)
     {
         $oldCart = Session::has('cart') ? Session::get('cart') : null;
-        $cart = new Cart($oldCart)-
+        $cart = new Cart($oldCart);
+        $cart->reduceOne($id);
+        if (count($cart->items) > 0) {
+            Session::put('cart', $cart);
+        } else {
+            Session::forget('cart');
+        }
+        return redirect()->back();
+    }
+
+    public function getCheckOut()
+    {
+        return view('page.dat_hang');
+    }
+
+    public function postCheckOut(Request $request)
+    {
+
     }
 }
